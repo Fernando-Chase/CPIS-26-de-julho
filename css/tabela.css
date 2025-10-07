@@ -1,0 +1,66 @@
+/* Container principal */
+.tabela-container {
+  display: flex;
+  justify-content: space-around; /* Espaça as colunas igualmente */
+  align-items: flex-start; /* Alinhamento no topo */
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  gap: 50px; /* Espaçamento entre colunas */
+}
+
+/* Cada coluna individual */
+.coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px; /* Espaçamento vertical entre os itens */
+}
+
+/* Títulos das colunas */
+.coluna h2 {
+  color: #188272;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Links */
+.coluna a {
+  color: #1c1c3c;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.coluna a:hover {
+  color: #188272;
+}
+
+/* Textos simples */
+.coluna p {
+  color: #1c1c3c;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Estilização exclusiva da coluna TRANSPARÊNCIA */
+.transparencia h2 {
+  background-color: #3375d7;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+  .tabela-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
